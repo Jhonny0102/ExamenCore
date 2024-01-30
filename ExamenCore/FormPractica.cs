@@ -10,6 +10,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+#region
+
+//--OBTENES TODOS LOS CLIENTES
+//CREATE PROCEDURE SP_NOMBRECLIENTES
+//AS
+//	SELECT EMPRESA  FROM CLIENTES
+//GO
+
+//-- Obtener pedidos de un cliente
+//ALTER PROCEDURE SP_PEDIDOSCLIENTE
+//(@Cliente nvarchar(50))
+//AS
+//    DECLARE @codCliente nvarchar(50)
+//	SELECT @codCliente = CodigoCliente FROM CLIENTES
+//	WHERE EMPRESA=@Cliente
+	
+//	SELECT CODIGOPEDIDO FROM PEDIDOS
+//	WHERE CODIGOCLIENTE=@codCliente
+//GO
+
+//--Obtener informacion sobre un pedido
+//CREATE PROCEDURE SP_INFOPEDIDO
+//(@COD_CLIENTE NVARCHAR(50), @COD_PEDIDO NVARCHAR(50))
+//AS
+//	SELECT * FROM PEDIDOS 
+//	WHERE CODIGOCLIENTE=@COD_CLIENTE AND CODIGOPEDIDO=@COD_PEDIDO
+//GO
+
+#endregion
+
+
 namespace ExamenCore
 {
 
